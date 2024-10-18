@@ -40,7 +40,7 @@ void asignarGrupos(const std::vector<int>& grupos, const std::vector<std::string
 	
 	for (size_t x = 0; x < numGrupos; x++) {
 		std::string fechaAsignada = fechasRepetidas[x];
-		std::cout << "Grupo " << grupos[x] << ", " << profesor << ", Fecha: " << fechaAsignada << std::endl;
+		std::cout << "Grupo " << grupos[x] << ", " << profesor << ", " << fechaAsignada << std::endl;
 	}
 }
 std::vector<std::string> preguntarFechasDisponibles() {
@@ -73,14 +73,14 @@ int main() {
 	/*Cada profesor tiene su colección de grupos que se asignan hardcodeados
 	  **Modificar cada colección con los grupos que tengan asignados.
 	*/
-	std::vector<int> ariel = {5, 11, 20, 40, 32, 44, 88, 77, 46, 100}; 
-	std::vector<int> dani = {29, 36}; 
-	std::vector<int> angel = {42, 45}; 
-	std::vector<int> coco = {47}; 
-	std::vector<int> maxi = {60, 70}; 
-	std::vector<int> vero = {74, 76}; 
-	std::vector<int> mariano = {77}; 
-	std::vector<int> brian = {79, 80}; 
+	std::vector<int> ariel = {9, 12,23, 33, 35, 47, 57, 72, 76, 80}; 
+	std::vector<int> dani = {18, 40, 44, 52, 65, 75}; 
+	std::vector<int> angel = {2, 3, 4, 16, 27, 32, 48}; 
+	std::vector<int> coco = {45, 46, 60, 70, 74, 77}; 
+	std::vector<int> maxi = {42, 79}; 
+	std::vector<int> vero = {5, 11, 20, 29, 36}; 
+	std::vector<int> mariano = {6, 7, 21, 25, 38}; 
+	std::vector<int> brian = {1, 10, 14, 15, 17, 22, 24, 26, 30, 34, 71}; 
 	
 	/*Declaro un map con los nombres como clave y de valor en cada uno sus
 	  colecciones de grupos. Herramienta que no tenía muy en claro como usar
@@ -121,7 +121,8 @@ int main() {
 	}
 	
 	std::cout << "\nEspero que les haya servido! proximanente la app de escritorio con Winforms\n"
-		      << "Saludos!\n"
+		      << "Esta mini app es de uso libre y gratuito, quien la use tiene todo mi consentimiento\n"
+		      << "para modificar y tocar lo que quiera. Saludos!\n"
 		      << "Martin Alejandro Garcia";
 	
 	return 0;
